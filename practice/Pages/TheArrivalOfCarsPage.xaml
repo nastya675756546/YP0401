@@ -10,10 +10,14 @@
 
     <Grid Background="#FFF">
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="TheArrivalOfCarsDG" HorizontalAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+            <TextBlock Text="Поступление автомобилей" FontSize="30"/>
+        </StackPanel>
+        <DataGrid x:Name="TheArrivalOfCarsDG" HorizontalAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Документ" Binding="{Binding receiptDocument}"/>
                 <DataGridTextColumn Header="Дата" Binding="{Binding dateOfReceipt, StringFormat=\{0:dd.MM.yyyy\}}"/>
@@ -29,7 +33,7 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Orientation="Horizontal" Grid.Row="1">
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
             <Button x:Name="AddBtn" Content="Добавить" Margin="5" Height="30" Width="150" Click="AddBtn_Click"/>
             <Button x:Name="DelBtn" Content="Удалить" Margin="5" Height="30" Width="150" Click="DelBtn_Click"/>
             <Button x:Name="UpdBtn" Content="Обновить" Margin="5" Height="30" Width="150"/>

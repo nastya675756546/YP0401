@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\УП0401\practice\practice\practice\obj\Debug\
+C:\Users\user\Desktop\УП0401\practice\practice\practice\obj\Debug\
 practice
 none
 false
 DEBUG;TRACE
-D:\УП0401\practice\practice\practice\App.xaml
+C:\Users\user\Desktop\УП0401\practice\practice\practice\App.xaml
 121983744568
 4-753639813
-26-316310198
-22664963199
+271896568480
+22-2070162983
 MainWindow.xaml;Pages\AddEditCarPage.xaml;Pages\AddEditCarSalePage.xaml;Pages\AddEditEmployeePage.xaml;Pages\AddEditTheArrivalOfCarsPage.xaml;Pages\AutorizationPage.xaml;Pages\CarPage.xaml;Pages\CarSalePage.xaml;Pages\EmployeePage.xaml;Pages\MainPage.xaml;Pages\ReportPage.xaml;Pages\TheArrivalOfCarsPage.xaml;
 
-False
+True
 
