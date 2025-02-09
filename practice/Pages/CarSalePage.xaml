@@ -15,13 +15,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Background="#D5BCB4" Grid.Row="0">
             <TextBlock Text="Продажа автомобилей" FontSize="30"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1">
             <TextBlock Text="Найти по автомобилю:" Margin="15"/>
             <TextBox  x:Name="findtext" Margin="5" Height="20" Width="150"/>
-            <Button x:Name="findBtn" Content="Найти" Margin="5" Height="20" Width="150" Click="findBtn_Click"/>
+            <Button x:Name="findBtn" Content="Найти" Background="#D5BCB4" Margin="5" Height="20" Width="150" Click="findBtn_Click"/>
         </StackPanel>
         <DataGrid x:Name="CarSaleDG" HorizontalAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2">
             <DataGrid.Columns>
@@ -34,17 +34,17 @@
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Content="Изменить" Margin="5" Height="30" Width="150" Click="Button_Click"/>
+                            <Button Content="Изменить" Background="#D5BCB4" Margin="5" Height="30" Width="150" Click="Button_Click"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" Grid.Row="3">
-            <Button x:Name="AddBtn" Content="Добавить" Margin="5" Height="30" Width="150" Click="AddBtn_Click"/>
-            <Button x:Name="DelBtn" Content="Удалить" Margin="5" Height="30" Width="150" Click="DelBtn_Click"/>
-            <Button x:Name="UpdBtn" Content="Обновить" Margin="5" Height="30" Width="150" Click="UpdBtn_Click"/>
-            <Button x:Name="backBtn" Content="Назад" Margin="5" Height="30" Width="150" Click="backBtn_Click"/>
+            <Button x:Name="AddBtn" Content="Добавить" Background="#D5BCB4" Margin="5" Height="30" Width="150" Click="AddBtn_Click"/>
+            <Button x:Name="DelBtn" Content="Удалить" Background="#D5BCB4" Margin="5" Height="30" Width="150" Click="DelBtn_Click"/>
+            <Button x:Name="UpdBtn" Content="Обновить" Background="#D5BCB4" Margin="5" Height="30" Width="150" Click="UpdBtn_Click"/>
+            <Button x:Name="backBtn" Content="Назад" Background="#D5BCB4" Margin="5" Height="30" Width="150" Click="backBtn_Click"/>
         </StackPanel>
     </Grid>
 </Page>

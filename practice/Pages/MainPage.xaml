@@ -10,14 +10,14 @@
 
     <Grid Background="#FFF">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFF" Margin="20">
-            <Button Content="Автомобили" x:Name="carBtn" Margin="5" Width="300" Click="Button_Click"/>
-            <Button Content="Сотрудники"  x:Name = "emlBtn" Margin="5" Click="Button_Click_1"/>
-            <Button Content="Поступление автомобилей" Margin="5" Width="300" Click="Button_Click_2"/>
-            <Button Content="Продажа автомобилей" Margin="5" Click="Button_Click_3"/>
-            <Button Content="Отчет" Margin="5" Click="Button_Click_4"/>
+            <Button Content="Автомобили" Background="#D5BCB4" x:Name="carBtn" Margin="5" Width="300" Click="Button_Click"/>
+            <Button Content="Сотрудники" Background="#D5BCB4" x:Name = "emlBtn" Margin="5" Click="Button_Click_1"/>
+            <Button Content="Поступление автомобилей" Background="#D5BCB4" Margin="5" Width="300" Click="Button_Click_2"/>
+            <Button Content="Продажа автомобилей" Background="#D5BCB4" Margin="5" Click="Button_Click_3"/>
+            <Button Content="Отчет" Background="#D5BCB4" Margin="5" Click="Button_Click_4"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="#FFF"  Margin="20">
-            <Button Content="Выход" Margin="5" Width="300" Click="Button_Click_5"/>
+            <Button Content="Выход" Background="#D5BCB4" Margin="5" Width="300" Click="Button_Click_5"/>
         </StackPanel>
     </Grid>
 </Page>
