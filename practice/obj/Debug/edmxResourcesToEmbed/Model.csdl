@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="nameCar" />
+    </Key>
+    <Property Name="nameCar" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VIN" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="stamp" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="model" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="color" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CarSale" Relationship="Self.FK_CarSale_Car" FromRole="Car" ToRole="CarSale" />
+    <NavigationProperty Name="TheArrivalOfCars" Relationship="Self.FK_TheArrivalOfCars_Car" FromRole="Car" ToRole="TheArrivalOfCars" />
+  </EntityType>
+  <EntityType Name="CarSale">
+    <Key>
+      <PropertyRef Name="salesDocument" />
+    </Key>
+    <Property Name="salesDocument" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dataOfSale" Type="DateTime" Precision="0" />
+    <Property Name="receiptDocument" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="nameCar" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fiiNameEmployee" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <NavigationProperty Name="Car" Relationship="Self.FK_CarSale_Car" FromRole="CarSale" ToRole="Car" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_CarSale_Employee" FromRole="CarSale" ToRole="Employee" />
+    <NavigationProperty Name="TheArrivalOfCars" Relationship="Self.FK_CarSale_TheArrivalOfCars" FromRole="CarSale" ToRole="TheArrivalOfCars" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="fillNameEmployee" />
+    </Key>
+    <Property Name="fillNameEmployee" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="post" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfEmployment" Type="DateTime" Precision="0" />
+    <Property Name="password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CarSale" Relationship="Self.FK_CarSale_Employee" FromRole="Employee" ToRole="CarSale" />
+    <NavigationProperty Name="TheArrivalOfCars" Relationship="Self.FK_TheArrivalOfCars_Employee" FromRole="Employee" ToRole="TheArrivalOfCars" />
+  </EntityType>
+  <EntityType Name="TheArrivalOfCars">
+    <Key>
+      <PropertyRef Name="receiptDocument" />
+    </Key>
+    <Property Name="receiptDocument" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dateOfReceipt" Type="DateTime" Precision="0" />
+    <Property Name="nameCar" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fillNameEmployee" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="initialPrice" Type="Double" />
+    <NavigationProperty Name="Car" Relationship="Self.FK_TheArrivalOfCars_Car" FromRole="TheArrivalOfCars" ToRole="Car" />
+    <NavigationProperty Name="CarSale" Relationship="Self.FK_CarSale_TheArrivalOfCars" FromRole="TheArrivalOfCars" ToRole="CarSale" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_TheArrivalOfCars_Employee" FromRole="TheArrivalOfCars" ToRole="Employee" />
+  </EntityType>
+  <Association Name="FK_CarSale_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="CarSale" Type="Self.CarSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="nameCar" />
+      </Principal>
+      <Dependent Role="CarSale">
+        <PropertyRef Name="nameCar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheArrivalOfCars_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="TheArrivalOfCars" Type="Self.TheArrivalOfCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="nameCar" />
+      </Principal>
+      <Dependent Role="TheArrivalOfCars">
+        <PropertyRef Name="nameCar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarSale_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="CarSale" Type="Self.CarSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="fillNameEmployee" />
+      </Principal>
+      <Dependent Role="CarSale">
+        <PropertyRef Name="fiiNameEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarSale_TheArrivalOfCars">
+    <End Role="TheArrivalOfCars" Type="Self.TheArrivalOfCars" Multiplicity="0..1" />
+    <End Role="CarSale" Type="Self.CarSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheArrivalOfCars">
+        <PropertyRef Name="receiptDocument" />
+      </Principal>
+      <Dependent Role="CarSale">
+        <PropertyRef Name="receiptDocument" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheArrivalOfCars_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="TheArrivalOfCars" Type="Self.TheArrivalOfCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="fillNameEmployee" />
+      </Principal>
+      <Dependent Role="TheArrivalOfCars">
+        <PropertyRef Name="fillNameEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Car" EntityType="Self.Car" />
+    <EntitySet Name="CarSale" EntityType="Self.CarSale" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="TheArrivalOfCars" EntityType="Self.TheArrivalOfCars" />
+    <AssociationSet Name="FK_CarSale_Car" Association="Self.FK_CarSale_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="CarSale" EntitySet="CarSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheArrivalOfCars_Car" Association="Self.FK_TheArrivalOfCars_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="TheArrivalOfCars" EntitySet="TheArrivalOfCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarSale_Employee" Association="Self.FK_CarSale_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="CarSale" EntitySet="CarSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarSale_TheArrivalOfCars" Association="Self.FK_CarSale_TheArrivalOfCars">
+      <End Role="TheArrivalOfCars" EntitySet="TheArrivalOfCars" />
+      <End Role="CarSale" EntitySet="CarSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheArrivalOfCars_Employee" Association="Self.FK_TheArrivalOfCars_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="TheArrivalOfCars" EntitySet="TheArrivalOfCars" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

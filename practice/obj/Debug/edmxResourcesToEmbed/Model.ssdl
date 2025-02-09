@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DatabaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="nameCar" />
+    </Key>
+    <Property Name="nameCar" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="VIN" Type="varchar" MaxLength="17" />
+    <Property Name="stamp" Type="varchar" MaxLength="30" />
+    <Property Name="model" Type="varchar" MaxLength="30" />
+    <Property Name="color" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="CarSale">
+    <Key>
+      <PropertyRef Name="salesDocument" />
+    </Key>
+    <Property Name="salesDocument" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="dataOfSale" Type="date" />
+    <Property Name="receiptDocument" Type="varchar" MaxLength="100" />
+    <Property Name="nameCar" Type="varchar" MaxLength="255" />
+    <Property Name="fiiNameEmployee" Type="nvarchar" MaxLength="255" />
+    <Property Name="price" Type="float" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="fillNameEmployee" />
+    </Key>
+    <Property Name="fillNameEmployee" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="post" Type="nvarchar" MaxLength="30" />
+    <Property Name="DateOfEmployment" Type="date" />
+    <Property Name="password" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TheArrivalOfCars">
+    <Key>
+      <PropertyRef Name="receiptDocument" />
+    </Key>
+    <Property Name="receiptDocument" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="dateOfReceipt" Type="date" />
+    <Property Name="nameCar" Type="varchar" MaxLength="255" />
+    <Property Name="fillNameEmployee" Type="nvarchar" MaxLength="255" />
+    <Property Name="initialPrice" Type="float" />
+  </EntityType>
+  <Association Name="FK_CarSale_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="CarSale" Type="Self.CarSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="nameCar" />
+      </Principal>
+      <Dependent Role="CarSale">
+        <PropertyRef Name="nameCar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarSale_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="CarSale" Type="Self.CarSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="fillNameEmployee" />
+      </Principal>
+      <Dependent Role="CarSale">
+        <PropertyRef Name="fiiNameEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarSale_TheArrivalOfCars">
+    <End Role="TheArrivalOfCars" Type="Self.TheArrivalOfCars" Multiplicity="0..1" />
+    <End Role="CarSale" Type="Self.CarSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheArrivalOfCars">
+        <PropertyRef Name="receiptDocument" />
+      </Principal>
+      <Dependent Role="CarSale">
+        <PropertyRef Name="receiptDocument" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheArrivalOfCars_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="TheArrivalOfCars" Type="Self.TheArrivalOfCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="nameCar" />
+      </Principal>
+      <Dependent Role="TheArrivalOfCars">
+        <PropertyRef Name="nameCar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TheArrivalOfCars_Employee">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="TheArrivalOfCars" Type="Self.TheArrivalOfCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="fillNameEmployee" />
+      </Principal>
+      <Dependent Role="TheArrivalOfCars">
+        <PropertyRef Name="fillNameEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище DatabaseModelContainer">
+    <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CarSale" EntityType="Self.CarSale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TheArrivalOfCars" EntityType="Self.TheArrivalOfCars" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CarSale_Car" Association="Self.FK_CarSale_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="CarSale" EntitySet="CarSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarSale_Employee" Association="Self.FK_CarSale_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="CarSale" EntitySet="CarSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarSale_TheArrivalOfCars" Association="Self.FK_CarSale_TheArrivalOfCars">
+      <End Role="TheArrivalOfCars" EntitySet="TheArrivalOfCars" />
+      <End Role="CarSale" EntitySet="CarSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheArrivalOfCars_Car" Association="Self.FK_TheArrivalOfCars_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="TheArrivalOfCars" EntitySet="TheArrivalOfCars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TheArrivalOfCars_Employee" Association="Self.FK_TheArrivalOfCars_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="TheArrivalOfCars" EntitySet="TheArrivalOfCars" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

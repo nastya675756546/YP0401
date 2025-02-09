@@ -1,0 +1,46 @@
+﻿<Page x:Class="practice.Pages.CarSalePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:practice.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CarSalePage" Loaded="Page_Loaded">
+
+    <Grid Background="#FFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
+            <TextBlock Text="Найти по автомобилю:" Margin="15"/>
+            <TextBox  x:Name="findtext" Margin="5" Height="20" Width="150"/>
+            <Button x:Name="findBtn" Content="Найти" Margin="5" Height="20" Width="150" Click="findBtn_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="CarSaleDG" HorizontalAlignment="Stretch" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Документ" Binding="{Binding salesDocument}"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding dataOfSale, StringFormat=\{0:dd.MM.yyyy\}}"/>
+                <DataGridTextColumn Header="Документ поступления" Binding="{Binding receiptDocument}"/>
+                <DataGridTextColumn Header="Автомобиль" Binding="{Binding nameCar}"/>
+                <DataGridTextColumn Header="ФИО менеджера" Binding="{Binding fiiNameEmployee}"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding price}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Изменить" Margin="5" Height="30" Width="150" Click="Button_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button x:Name="AddBtn" Content="Добавить" Margin="5" Height="30" Width="150" Click="AddBtn_Click"/>
+            <Button x:Name="DelBtn" Content="Удалить" Margin="5" Height="30" Width="150" Click="DelBtn_Click"/>
+            <Button x:Name="UpdBtn" Content="Обновить" Margin="5" Height="30" Width="150" Click="UpdBtn_Click"/>
+            <Button x:Name="backBtn" Content="Назад" Margin="5" Height="30" Width="150" Click="backBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,160 @@
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\Database.mdf
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\Database_log.ldf
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\practice.exe.config
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\practice.exe
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\practice.pdb
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\EntityFramework.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\Microsoft.Azure.Amqp.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\EntityFramework.xml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\Microsoft.Azure.Amqp.xml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.csproj.AssemblyReference.cache
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\MainWindow.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\CarPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\MainPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\App.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice_Content.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice_MarkupCompile.cache
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice_MarkupCompile.lref
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\MainWindow.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\CarPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\MainPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.g.resources
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.Properties.Resources.resources
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.csproj.GenerateResource.cache
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.csproj.CopyComplete
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.exe
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.pdb
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\EmployeePage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\EmployeePage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\TheArrivalOfCarsPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\TheArrivalOfCarsPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\CarSalePage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\CarSalePage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditCarPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditCarPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditEmployeePage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditEmployeePage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditCarSalePage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditTheArrivalOfCarsPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditCarSalePage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AddEditTheArrivalOfCarsPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\ReportPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\ReportPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Interop.VBIDE.dll
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\practice.csproj.ResolveComReference.cache
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AutorizationPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\AutorizationPage.baml
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\TestPage.g.cs
+C:\Users\Пользователь\OneDrive\Документы\practice\practice\practice\obj\Debug\Pages\TestPage.baml
+D:\производственная практика\practice\practice\practice\bin\Debug\Database.mdf
+D:\производственная практика\practice\practice\practice\bin\Debug\Database_log.ldf
+D:\производственная практика\practice\practice\practice\bin\Debug\practice.exe.config
+D:\производственная практика\practice\practice\practice\bin\Debug\practice.exe
+D:\производственная практика\practice\practice\practice\bin\Debug\practice.pdb
+D:\производственная практика\practice\practice\practice\bin\Debug\EntityFramework.dll
+D:\производственная практика\practice\practice\practice\bin\Debug\EntityFramework.SqlServer.dll
+D:\производственная практика\practice\practice\practice\bin\Debug\Microsoft.Azure.Amqp.dll
+D:\производственная практика\practice\practice\practice\bin\Debug\EntityFramework.xml
+D:\производственная практика\practice\practice\practice\bin\Debug\EntityFramework.SqlServer.xml
+D:\производственная практика\practice\practice\practice\bin\Debug\Microsoft.Azure.Amqp.xml
+D:\производственная практика\practice\practice\practice\bin\Debug\ru\EntityFramework.resources.dll
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.csproj.AssemblyReference.cache
+D:\производственная практика\practice\practice\practice\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\производственная практика\practice\practice\practice\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+D:\производственная практика\practice\practice\practice\obj\Debug\Interop.VBIDE.dll
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.csproj.ResolveComReference.cache
+D:\производственная практика\practice\practice\practice\obj\Debug\MainWindow.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditCarPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditCarSalePage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditEmployeePage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditTheArrivalOfCarsPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AutorizationPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\CarPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\CarSalePage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\EmployeePage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\MainPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\ReportPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\TestPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\TheArrivalOfCarsPage.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\App.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\practice_Content.g.cs
+D:\производственная практика\practice\practice\practice\obj\Debug\practice_MarkupCompile.cache
+D:\производственная практика\practice\practice\practice\obj\Debug\practice_MarkupCompile.lref
+D:\производственная практика\practice\practice\practice\obj\Debug\MainWindow.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditCarPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditCarSalePage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditEmployeePage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AddEditTheArrivalOfCarsPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\AutorizationPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\CarPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\CarSalePage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\EmployeePage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\MainPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\ReportPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\TestPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\Pages\TheArrivalOfCarsPage.baml
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.g.resources
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.Properties.Resources.resources
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.csproj.GenerateResource.cache
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.csproj.CoreCompileInputs.cache
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.csproj.Up2Date
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.exe
+D:\производственная практика\practice\practice\practice\obj\Debug\practice.pdb
+D:\УП0401\practice\practice\practice\obj\Debug\practice.csproj.AssemblyReference.cache
+D:\УП0401\practice\practice\practice\obj\Debug\Interop.Microsoft.Office.Core.dll
+D:\УП0401\practice\practice\practice\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+D:\УП0401\practice\practice\practice\obj\Debug\Interop.VBIDE.dll
+D:\УП0401\practice\practice\practice\obj\Debug\practice.csproj.ResolveComReference.cache
+D:\УП0401\practice\practice\practice\obj\Debug\MainWindow.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditCarPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditCarSalePage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditEmployeePage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditTheArrivalOfCarsPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AutorizationPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\CarPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\CarSalePage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\EmployeePage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\MainPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\ReportPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\TheArrivalOfCarsPage.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\App.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\practice_Content.g.cs
+D:\УП0401\practice\practice\practice\obj\Debug\practice_MarkupCompile.cache
+D:\УП0401\practice\practice\practice\obj\Debug\practice_MarkupCompile.lref
+D:\УП0401\practice\practice\practice\obj\Debug\practice.exe
+D:\УП0401\practice\practice\practice\obj\Debug\practice.pdb
+D:\УП0401\practice\practice\practice\bin\Debug\Database.mdf
+D:\УП0401\practice\practice\practice\bin\Debug\Database_log.ldf
+D:\УП0401\practice\practice\practice\bin\Debug\practice.exe.config
+D:\УП0401\practice\practice\practice\bin\Debug\practice.exe
+D:\УП0401\practice\practice\practice\bin\Debug\practice.pdb
+D:\УП0401\practice\practice\practice\bin\Debug\EntityFramework.dll
+D:\УП0401\practice\practice\practice\bin\Debug\EntityFramework.SqlServer.dll
+D:\УП0401\practice\practice\practice\bin\Debug\Microsoft.Azure.Amqp.dll
+D:\УП0401\practice\practice\practice\bin\Debug\EntityFramework.xml
+D:\УП0401\practice\practice\practice\bin\Debug\EntityFramework.SqlServer.xml
+D:\УП0401\practice\practice\practice\bin\Debug\Microsoft.Azure.Amqp.xml
+D:\УП0401\practice\practice\practice\bin\Debug\ru\EntityFramework.resources.dll
+D:\УП0401\practice\practice\practice\obj\Debug\MainWindow.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditCarPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditCarSalePage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditEmployeePage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AddEditTheArrivalOfCarsPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\AutorizationPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\CarPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\CarSalePage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\EmployeePage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\MainPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\ReportPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\Pages\TheArrivalOfCarsPage.baml
+D:\УП0401\practice\practice\practice\obj\Debug\practice.g.resources
+D:\УП0401\practice\practice\practice\obj\Debug\practice.Properties.Resources.resources
+D:\УП0401\practice\practice\practice\obj\Debug\practice.csproj.GenerateResource.cache
+D:\УП0401\practice\practice\practice\obj\Debug\practice.csproj.CoreCompileInputs.cache
+D:\УП0401\practice\practice\practice\obj\Debug\practice.csproj.Up2Date
